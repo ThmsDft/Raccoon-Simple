@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -117,7 +118,7 @@ nav ul li button:hover {
 
 @media (max-width: 800px) {
   nav ul {
-    display: none
+    display: none;
   }
 }
 
