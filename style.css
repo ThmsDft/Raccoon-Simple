@@ -49,6 +49,16 @@ h2 + p {
   color: var(--text-muted);
 }
 
+@media (max-width: 800px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h2 + p {
+    font-size: 20px;
+  }
+}
+
 /* Header */
 header {
   position: fixed;
@@ -103,6 +113,12 @@ nav ul li button {
 nav ul li button:hover {
   background-color: var(--text-color);
   color: var(--background-color);
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none
+  }
 }
 
 /* main */
@@ -317,12 +333,12 @@ section.partenaires > p {
 
 section.partenaires div.list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
   width: 100%;
   margin: 100px auto 200px;
+  flex-wrap: wrap;
 }
 
 section.partenaires div.list img {
