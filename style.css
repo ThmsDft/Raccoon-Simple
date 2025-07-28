@@ -52,11 +52,12 @@ h2 + p {
 
 @media (max-width: 800px) {
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h2 + p {
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
@@ -173,40 +174,61 @@ section.hero button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 800px) {
+  section.hero {
+    padding: 20px;
+    width: 100%;
+    height: 800px;
+    border-radius: 0px;
+    margin-top: 60px;
+  }
+
+  section.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  section.hero p {
+    font-size: 14px;
+  }
+}
+
 /* section services */
 section.services {
   padding: 100px 50px;
   width: 100%;
-  position: relative;
 }
 
-section.services img#ford {
-  position: absolute;
-  right: -200px;
-  top: 60px;
-  width: 715px;
-  z-index: -1;
+section.services div.intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+section.services div.intro div.introTexte {
+  width: 100%;
+}
+
+section.services div.intro img#ford {
+  width: 700px;
+  height: 700px;
 }
 
 section.services h2 {
   font-size: 64px;
-  width: 50%;
   max-width: 600px;
   font-weight: 800;
   font-size: 64px;
   line-height: 95%;
-  margin-top: 100px;
   margin-bottom: 30px;
 }
 
 section.services h2 + p {
-  width: 50%;
   max-width: 700px;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: var(--text-muted);
-  margin-bottom: 300px;
 }
 
 div.service {
@@ -266,6 +288,32 @@ section.services div.service div.text p.service {
 
   section.services {
     padding: 0;
+    padding-top: 50px;
+  }
+
+  section.services h2 {
+    text-align: center;
+    font-size: 28px;
+    padding-inline: 20px;
+    min-width: 100%;
+  }
+
+  section.services h2 + p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 15px;
+    padding-inline: 20px;
+    min-width: 100%;
+  }
+
+  section.services div.intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.services div.intro img#ford {
+    width: 100%;
+    height: auto;
   }
 
   section.services div.services-slider {
@@ -289,7 +337,7 @@ section.services div.service div.text p.service {
   }
 
   section.services div.service div.text h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   section.services div.service div.text p {
@@ -392,6 +440,25 @@ section.partenaires div.list img {
 
 .flap img {
   height: 70px;
+}
+
+@media (max-width: 800px) {
+  section.partenaires {
+    padding: 100px 20px 50px 20px;
+  }
+
+  section.partenaires div.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 50px auto 100px;
+  }
+
+  section.partenaires div.list img {
+    height: 60px;
+  }
 }
 
 /* réalisations */
