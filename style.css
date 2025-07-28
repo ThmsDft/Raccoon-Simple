@@ -317,6 +317,7 @@ section.partenaires > p {
 
 section.partenaires div.list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
