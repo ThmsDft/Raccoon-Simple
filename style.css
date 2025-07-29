@@ -360,12 +360,12 @@ section.services div.service div.text p.service {
     flex-direction: row;
   }
 
-  .services-slider-nav {
+  /* .services-slider-nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-inline: auto;
-  }
+  } */
 
   .services-slider-nav button.slider-btn {
     background-color: transparent;
