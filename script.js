@@ -110,3 +110,21 @@ window.addEventListener("scroll", () => {
 // Appelle la fonction une première fois au chargement pour s'assurer que
 // tout est bien positionné si le nuancier est déjà visible.
 animateNuancier();
+
+
+
+const container = document.querySelector('.services-slider');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+// Trouve une card pour connaître sa largeur
+const card = container.querySelector('.service');
+const cardWidth = card.offsetWidth + parseFloat(getComputedStyle(card).marginRight) * 2;
+
+nextBtn.addEventListener('click', () => {
+  container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});
+
+prevBtn.addEventListener('click', () => {
+  container.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
