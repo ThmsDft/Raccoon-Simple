@@ -158,17 +158,17 @@ section.hero p {
 }
 
 section.hero button {
-  background-color: var(--text-color);
-  color: var(--text-secondary-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   margin-top: 20px;
   border: none;
-  box-shadow: 0px 0px 5px #000000;
 }
+
 
 @media (max-width: 800px) {
   section.hero {
