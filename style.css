@@ -188,6 +188,8 @@ section.hero button:hover {
     font-size: 38px;
     margin-bottom: 20px;
     margin-top: 40px;
+    line-height: 38px;
+    text-shadow: 0px 0px 5px #000000;
   }
 
   section.hero p {
