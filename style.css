@@ -158,20 +158,14 @@ section.hero p {
 }
 
 section.hero button {
-  border: solid 1px var(--background-color);
-  background-color: rgba(255, 255, 255, 0.3);
-  color: var(--text-secondary-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   margin-top: 20px;
-}
-
-section.hero button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 800px) {
