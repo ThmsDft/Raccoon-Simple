@@ -158,7 +158,7 @@ section.hero p {
 }
 
 section.hero button {
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.5);
   color: var(--text-color);
   padding: 10px 20px;
   border-radius: 50px;
@@ -166,6 +166,7 @@ section.hero button {
   font-weight: 700;
   cursor: pointer;
   margin-top: 20px;
+  border: solid white 2px;
 }
 
 @media (max-width: 800px) {
